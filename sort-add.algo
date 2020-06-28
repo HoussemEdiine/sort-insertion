@@ -1,0 +1,17 @@
+ALGORITHM  Insertion sort
+VAR
+    n,i,j:INTEGER;
+    array : ARRAY_OF INTEGER[50];
+BEGIN
+    Read(n);
+    array.push(n);
+    FOR i FROM 0 TO array.length-2 STEP 1  DO
+      FOR j FROM n-i-2 TO max STEP 1  DO
+          IF (array[j]>array[j+1]) THEN
+          swap(array[j],array[j+1]);
+          END_IF
+      END_FOR
+    END_FOR
+    Write(array);
+
+END
