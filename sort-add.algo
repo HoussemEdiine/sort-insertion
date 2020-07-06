@@ -7,11 +7,11 @@ BEGIN
     FOR i FROM 0 TO array.length-1 STEP 1  DO
       v := array[i]
       c := i
-      WHILE (c>0 AND array[c-1]>value) DO
+      WHILE (c>0 AND array[c-1]>v) DO
           array[c]:=array[c-1]
           c:=c-1
       END_WHILE
-      array[c]:= value
+      array[c]:= v
     END_FOR
     Write(array);
 
